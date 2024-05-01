@@ -1,0 +1,90 @@
+.player_temporizador button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.player_temporizador {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-textos);
+    white-space: nowrap;
+}
+
+.player_descricao,
+.player_temporizador-cronometro {
+    cursor: default;
+}
+
+.player_temporizador-cronometro_tempo {
+    width: 30rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.player_descricao h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.player_descricao span {
+    font-size: 0.9rem;
+}
+
+.player_volume_nivel {
+    width: 70%;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.secao-player {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 260px 1fr 180px;
+}
+
+.player_descricao {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1rem 1.7rem 1.7rem 1rem;
+}
+
+.player_descricao h3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+}
+
+.player_descricao span {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+.player_descricao img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.player_temporizador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_temporizador-botoes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player_temporizador-cronometro {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
